@@ -25,22 +25,26 @@
  # global search and replace
 
  ## :%s/Line/line/g
--[:] --> start an ex command
--[%s]--> specifies range for oepration
--[s]--> specifies the operation
--[/Line/line] --> search pattern and replace text
--[g]--> global
+-[:]  start an ex command
 
-# editiing multiple files
+-[%s] specifies range for oepration
 
-''' test
+-[s] specifies the operation
+
+-[/Line/line]  search pattern and replace text
+
+-[g] global
+
+# Editiing multiple files
+
+``` test
 There are two ways we can edit multiple files
-'''
+```
 
 
 1. add all the files with vim command
 2. open one file and then use :e and add the other files
 
-Difference is that on;y in first case we can use :n to go to next file and :N to go for previous file not in the second case.
+Difference is that only in first case we can use :n to go to next file and :N to go for previous file not in the second case.
 
 use :r <file_name> to enter whole content of one file to other.
